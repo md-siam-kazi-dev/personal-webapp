@@ -1,68 +1,26 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@layer components {
+  .nav{
+    @apply p-5 ;
   }
-  a:hover {
-    color: #747bff;
+  .inner-nav{
+    @apply mx-auto flex justify-between items-center max-w-[1440px] rounded-full border border-[#ffffff5f] px-2 py-2;
   }
-  button {
-    background-color: #f9f9f9;
+  .green-btn{
+    @apply px-7 py-3 bg-yellow-400 text-[18px] font-bold text-black rounded-full; 
+  }
+  .transparent-btn{
+    @apply border border-[#dddddd9c] px-7 py-3 bg-transparent text-[18px] font-bold text-white rounded-full ;
+  }
+  .nav-ul{
+    @apply flex justify-between items-center text-white gap-4 font-semibold hidden lg:flex;
+  }
+  .banner-header{
+    @apply w-full text-center sm:w-[80%]  md:w-[50%] lg:w-[50%] max-w-[1440px] mx-auto text-white mb-6;
+  }
+  .banner-input-field{
+    @apply flex justify-between mx-auto border border-[#dddddd84] rounded-full px-1 py-1 w-full sm:w-[70%] lg:w-[30%] mt-6;
   }
 }
+
