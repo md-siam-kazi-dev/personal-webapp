@@ -18,7 +18,7 @@ export const TrastedCompany = () => {
 
         })
         gsap.to(' .trusted img',{
-            transform:'translate(-200%)',
+            transform:'translate(-400%)',
             scrollTrigger:{
                 trigger:'.trusted',
                 scrub:true,
