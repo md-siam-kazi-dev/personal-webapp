@@ -28,7 +28,7 @@ export const TrastedCompany = () => {
         })
     })
     return(
-        <div className="mt-40 text-center trusted">
+        <div className="mt-40 text-center trusted overflow-hidden">
         <h1 className="text-2xl text-white opacity-70 mb-10">Allready chosen By Market Leaders</h1>
         <div className="py-4 overflow-hidden trusted-company flex shadow-[inset_-10px_0_15px_-10px_[#111]],inset_10px_0_30px_-10px_[#111]]  flex-0
         justify-between gap-7 mx-auto w-full ">

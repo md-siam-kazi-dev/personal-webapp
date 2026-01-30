@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 function App() {
   return (
-    <main className='bg-[#111]'>
+    <main className='bg-[#111] overflow-hidden'>
      <NavBar />
      <Banner />
      <TrastedCompany />

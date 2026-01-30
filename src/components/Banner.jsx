@@ -76,11 +76,11 @@ export const Banner = () =>{
         
     })
     return (
-        <div className="w-full banner px-5 mt-10 sm:mt-20 lg:mt-25 xl:mt-40">
+        <div className="w-[100%] banner overflow-x-hidden px-5 mt-10 sm:mt-20 lg:mt-25 xl:mt-40">
 
-            <img src="/images/design-example-1.png" alt="" className="hidden md:absolute lg:block left-img left-[-50px] w-[30%] top-100 max-w-[300px]"/>
+            <img src="/images/design-example-1.png" alt="" className="hidden lg:absolute lg:block left-img left-[-50px] w-[30%] top-100 max-w-[300px]"/>
              
-            <img src="/images/design-example-2.png" alt="" className="hidden md:absolute lg:block right-img right-[-50px] top-40 w-[30%] max-w-[400px]"/>
+            <img src="/images/design-example-2.png" alt="" className="hidden lg:absolute lg:block right-img right-[-50px] top-40 w-[30%] max-w-[400px]"/>
 
 
             <div className="banner-first-tag bg-blue-300 rounded-full
